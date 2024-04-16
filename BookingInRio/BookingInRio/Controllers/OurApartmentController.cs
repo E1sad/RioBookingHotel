@@ -13,5 +13,12 @@ namespace BookingInRio.Controllers
             List<AboutApartment> Apartments = _db.AboutApartments.ToList();
             return View(Apartments);
         }
+        public IActionResult Apartment(int? id)
+        {
+            if (id == null || id == 0) { /*return RedirectToAction("Index"); */ return NotFound(); }
+            AboutApartment? apart = _db.AboutApartments.Find(id);
+            if (apart == null) { return NotFound(); }
+            return View(apart);
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BookingInRio.Models
 {
@@ -15,5 +16,7 @@ namespace BookingInRio.Models
         [Required]
         public double PriceOfRoom { get; set; }
         public int PersonLimitSize { get; set; }
+        [NotMapped]
+        public IFormFile ApartmentThumbnailImage { get; set; }
     }
 }
