@@ -3,6 +3,7 @@ using BookingInRio.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookingInRio.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240416071520_AddingDataAnnotationsAndRenaming")]
+    partial class AddingDataAnnotationsAndRenaming
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,38 +55,6 @@ namespace BookingInRio.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AboutApartments");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            BedCounts = 2,
-                            Description = "Our Junior Suites offer breathtaking views of the city skyline.",
-                            Name = "Junior Suite",
-                            PersonLimitSize = 2,
-                            PriceOfRoom = 250.0,
-                            SizeOfRoomInSqrMeter = 65.5f
-                        },
-                        new
-                        {
-                            Id = 2,
-                            BedCounts = 4,
-                            Description = "Our King Suites offer breathtaking views of the city skyline.",
-                            Name = "King Suite",
-                            PersonLimitSize = 6,
-                            PriceOfRoom = 500.0,
-                            SizeOfRoomInSqrMeter = 120.3f
-                        },
-                        new
-                        {
-                            Id = 3,
-                            BedCounts = 2,
-                            Description = "Our Penthouse Suites offer breathtaking views of the city skyline.",
-                            Name = "Penthouse",
-                            PersonLimitSize = 2,
-                            PriceOfRoom = 1250.0,
-                            SizeOfRoomInSqrMeter = 220f
-                        });
                 });
 #pragma warning restore 612, 618
         }

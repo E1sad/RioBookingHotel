@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model List<AboutApartment>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -37,37 +39,42 @@
                             <input type="number" class="count">
                             <button type="submit">Search</button>
                         </form>
-                        <div class="item">
-                            <div class="image">
-                                <img src="assets/media/apartment-1.jpg" alt="">
-                            </div>
-                            <div class="description">
-                                <div class="info">
-                                    <h2>
-                                        <a href="#">Junior Suite</a>
-                                    </h2>
-                                    <span>
-                                        Our Junior Suites offer breathtaking views of the city skyline.
-                                    </span>
-                                    <ul class="parametres">
-                                        <li>Size: <span>260 sq ft</span> </li>
-                                        <li>Beds: <span>2 Double(s)</span> </li>
-                                    </ul>
-                                    <ul class="features">
-                                        <li title="WiFi">
-                                            <i class="fas fa-wifi"></i>
-                                        </li>
-                                    </ul>
+
+                        @foreach (AboutApartment apart in Model.OrderBy(u=>u.BedCounts))
+                        {
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/media/apartment-1.jpg" alt="">
                                 </div>
-                                <div class="price">
-                                    <span>From</span>
-                                    <p>$250</p>
-                                    <a href="#">
-                                        More Info
-                                    </a>
+                                <div class="description">
+                                    <div class="info">
+                                        <h2>
+                                            <a href="#">@apart.Name</a>
+                                        </h2>
+                                        <span>
+                                            @apart.Description
+                                        </span>
+                                        <ul class="parametres">
+                                            <li>Size: <span>@apart.SizeOfRoomInSqrMeter</span> </li>
+                                            <li>Beds: <span>@apart.BedCounts</span> </li>
+                                        </ul>
+                                        <ul class="features">
+                                            <li title="WiFi">
+                                                <i class="fas fa-wifi"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="price">
+                                        <span>From</span>
+                                        <p>$@apart.PriceOfRoom</p>
+                                        <a href="#">
+                                            More Info
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        }
+
                     </div>
                 </div>
             </div>
