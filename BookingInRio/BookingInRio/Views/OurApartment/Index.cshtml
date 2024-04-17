@@ -23,11 +23,11 @@
                             <button type="submit">Search</button>
                         </form>
 
-                        @foreach (AboutApartment apart in Model.OrderBy(u=>u.BedCounts))
+                        @foreach (AboutApartment apart in Model.OrderBy(u=>u.PriceOfRoom))
                         {
                             <div class="item">
                                 <div class="image">
-                                    <img src="/assets/media/apartment-1.jpg" alt="">
+                                    <img src=@apart.ApartmentThumbnailImagePath alt="">
                                 </div>
                                 <div class="description">
                                     <div class="info">

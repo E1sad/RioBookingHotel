@@ -3,6 +3,7 @@ using BookingInRio.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookingInRio.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240417102633_AddThumbnailImagePathToAboutApartmentDb")]
+    partial class AddThumbnailImagePathToAboutApartmentDb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -83,7 +86,7 @@ namespace BookingInRio.Migrations
                         new
                         {
                             Id = 3,
-                            ApartmentThumbnailImagePath = "/assets/media/apartment-3.jpg",
+                            ApartmentThumbnailImagePath = "/assets/media/apartment-2.jpg",
                             BedCounts = 2,
                             Description = "Our Penthouse Suites offer breathtaking views of the city skyline.",
                             Name = "Penthouse",

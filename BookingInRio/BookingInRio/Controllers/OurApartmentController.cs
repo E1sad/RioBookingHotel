@@ -1,6 +1,8 @@
 ﻿using BookingInRio.Data;
 using BookingInRio.Models;
+using BookingInRio.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookingInRio.Controllers
 {
@@ -17,6 +19,10 @@ namespace BookingInRio.Controllers
         {
             if (id == null || id == 0) { /*return RedirectToAction("Index"); */ return NotFound(); }
             AboutApartment? apart = _db.AboutApartments.Find(id);
+/*            DetailedInfoApartmentViewMod viewMod = new DetailedInfoApartmentViewMod { 
+                Apartment = _db.AboutApartments.Include(a=>a.DetailedInformationApartment).FirstOrDefault(a => a.Id == id),
+                DetailedInfo = _db.
+            };*/
             if (apart == null) { return NotFound(); }
             return View(apart);
         }

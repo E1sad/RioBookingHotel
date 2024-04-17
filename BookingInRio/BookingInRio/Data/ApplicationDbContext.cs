@@ -11,8 +11,33 @@ namespace BookingInRio.Data
 
         public DbSet<AboutApartment> AboutApartments { get; set; }
 
+        //public DbSet<DetailedApartment> DetailedApartmentInfos { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+/*            modelBuilder.Entity<DetailedApartment>().HasData(
+                new DetailedApartment
+                {
+                    Id = 1,
+                    DetailedDescription = "Affordable luxury. Our Junior Suites are the perfect option if you’re looking for a little extra luxury. With an open 65.5 square meter floor plan, the Junior Suites offer the extra space you need to spread out and enjoy the breathtaking views of the city skyline",
+                    PersonLimitSize = 2,
+                    ApartmentId = 1
+                },
+                new DetailedApartment
+                {
+                    Id = 2,
+                    DetailedDescription = "Affordable luxury. Our Penthouse are the perfect option if you’re looking for a little extra luxury. With an open 220 square foot floor plan, the Junior Suites offer the extra space you need to spread out and enjoy the breathtaking views of the city skyline",
+                    PersonLimitSize = 2,
+                    ApartmentId = 3
+                },
+                new DetailedApartment
+                {
+                    Id = 3,
+                    DetailedDescription = "Our King Suites represent affordable luxury, making them an excellent choice for those desiring a touch of extravagance. These suites provide a spacious 120.3 square meter layout that allows guests to relax comfortably while admiring stunning city skyline views.",
+                    PersonLimitSize = 6,
+                    ApartmentId = 2
+                }
+                );*/
             modelBuilder.Entity<AboutApartment>().HasData(
                 new AboutApartment
                 {
@@ -22,7 +47,8 @@ namespace BookingInRio.Data
                     BedCounts = 2,
                     SizeOfRoomInSqrMeter = 65.5f,
                     PersonLimitSize = 2,
-                    PriceOfRoom = 250
+                    PriceOfRoom = 250,
+                    ApartmentThumbnailImagePath = "/assets/media/apartment-1.jpg"
                 },
                 new AboutApartment
                 {
@@ -32,7 +58,8 @@ namespace BookingInRio.Data
                     BedCounts = 4,
                     SizeOfRoomInSqrMeter = 120.3f,
                     PersonLimitSize = 6,
-                    PriceOfRoom = 500
+                    PriceOfRoom = 500,
+                    ApartmentThumbnailImagePath = "/assets/media/apartment-2.jpg"
                 },
                 new AboutApartment
                 {
@@ -42,7 +69,8 @@ namespace BookingInRio.Data
                     BedCounts = 2,
                     SizeOfRoomInSqrMeter = 220f,
                     PersonLimitSize = 2,
-                    PriceOfRoom = 1250
+                    PriceOfRoom = 1250,
+                    ApartmentThumbnailImagePath = "/assets/media/apartment-3.jpg"
                 }
                 );
         }

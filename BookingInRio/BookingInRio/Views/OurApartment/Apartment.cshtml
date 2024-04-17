@@ -1,7 +1,5 @@
 ﻿@model AboutApartment
 
-<!DOCTYPE html>
-<html lang="en">
 <body style="background-image: url(/assets/media/bg-apartment.png);">
     <main>
         <section id="page-title">
@@ -14,26 +12,29 @@
                 <div class="row">
                     <div class="col-10">
                         <div class="title">
-                            <a href="#">
+                            <a asp-controller="OurApartment" asp-action="Index">
                                 <i class="fas fa-arrow-left"></i>
                             </a>
                             <h1>@Model.Name</h1>
                         </div>
+
                         <div class="row">
                             <div class="col-8">
-                                @* <div class="slider">
+                                
+                                <div class="slider">
                                     <ul id="imageGallery">
-                                        <li data-thumb="assets/media/123.jpg" data-src="assets/media/123.jpg">
-                                            <img src="assets/media/123.jpg" />
+                                        <li data-thumb="@Model.ApartmentThumbnailImagePath" data-src="@Model.ApartmentThumbnailImagePath">
+                                            <img src="@Model.ApartmentThumbnailImagePath" />
                                         </li>
-                                        <li data-thumb="assets/media/123.jpg" data-src="assets/media/123.jpg">
-                                            <img src="assets/media/123.jpg" />
+                                        <li data-thumb="@Model.ApartmentThumbnailImagePath" data-src="@Model.ApartmentThumbnailImagePath">
+                                            <img src="@Model.ApartmentThumbnailImagePath" />
                                         </li>
-                                        <li data-thumb="assets/media/123.jpg" data-src="assets/media/123.jpg">
-                                            <img src="assets/media/123.jpg" />
+                                        <li data-thumb="@Model.ApartmentThumbnailImagePath" data-src="@Model.ApartmentThumbnailImagePath">
+                                            <img src="@Model.ApartmentThumbnailImagePath" />
                                         </li>
                                     </ul>
-                                </div> *@
+                                </div>
+
                                 <div class="info">
                                     <div class="item">
                                         <div class="row">
@@ -101,15 +102,10 @@
                                 </div>
                             </div>
                         </div>
+                    
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/JS/lightslider.js"></script>
-    <script src="assets/JS/main.js"></script>
 </body>
-
-</html>
