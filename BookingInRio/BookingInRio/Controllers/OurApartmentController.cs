@@ -1,5 +1,6 @@
 ﻿using BookingInRio.Data;
 using BookingInRio.Models;
+using BookingInRio.Services;
 using BookingInRio.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,10 +10,24 @@ namespace BookingInRio.Controllers
     public class OurApartmentController : Controller
     {
         private readonly ApplicationDbContext _db;
-        public OurApartmentController(ApplicationDbContext db) { _db = db; }
+        //private readonly EmailService _emailService;
+
+        public OurApartmentController(ApplicationDbContext db/*, EmailService emailService*/) { 
+            _db = db; /*_emailService = emailService;*/
+        }
         public IActionResult Index()
         {
             List<AboutApartment> Apartments = _db.AboutApartments.ToList();
+            /*try
+            {
+                string toEmail = "elsad.abdullayev.02703@gmail.com";
+                string subject = "Test Email";
+                string body = "This is a test email sent from my .NET application.";
+                _emailService.SendEmail(toEmail, subject, body);
+            }
+            catch (Exception ex)
+            {  
+            }*/
             return View(Apartments);
         }
         public IActionResult Apartment(int? id)
