@@ -12,7 +12,8 @@ namespace BookingInRio.Models
 
 
         [ForeignKey("AboutApartment")]
-        public int ApartmentId { get; set; }
+        public int AboutApartmentId { get; set; }
+        public AboutApartment AboutApartment { get; set; }
 
     }
 }

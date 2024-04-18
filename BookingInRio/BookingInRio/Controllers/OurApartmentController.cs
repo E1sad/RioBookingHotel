@@ -17,12 +17,18 @@ namespace BookingInRio.Controllers
         }
         public IActionResult Apartment(int? id)
         {
-            if (id == null || id == 0) { /*return RedirectToAction("Index"); */ return NotFound(); }
-            AboutApartment? apart = _db.AboutApartments.Find(id);
-/*            DetailedInfoApartmentViewMod viewMod = new DetailedInfoApartmentViewMod { 
-                Apartment = _db.AboutApartments.Include(a=>a.DetailedInformationApartment).FirstOrDefault(a => a.Id == id),
-                DetailedInfo = _db.
+            if (id == null || id == 0) {return NotFound(); }
+            //AboutApartment? apart = _db.AboutApartments.Find(id);
+            /*DetailedInfoApartmentViewMod viewMod = new DetailedInfoApartmentViewMod
+            {
+                Apartment = _db.AboutApartments.Include(d=>d.DetailedInformationApartment).FirstOrDefault(a => a.Id == id),
+                DetailedInfo = _db.DetailedApartmentInfos.FirstOrDefault(d => d.AboutApartmentId == id)
             };*/
+            //if (apart == null) { return NotFound(); }
+            //return View(apart);
+            /*if(viewMod.Apartment == null) { return NotFound(); }
+            return View(viewMod);*/
+            AboutApartment? apart = _db.AboutApartments.Include(d => d.DetailedInformationApartment).FirstOrDefault(a => a.Id == id);
             if (apart == null) { return NotFound(); }
             return View(apart);
         }

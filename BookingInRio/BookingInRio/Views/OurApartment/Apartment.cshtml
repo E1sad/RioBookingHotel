@@ -1,5 +1,7 @@
-﻿@model AboutApartment
+﻿@* @model BookingInRio.ViewModels.DetailedInfoApartmentViewMod
+ *@
 
+ @model AboutApartment 
 <body style="background-image: url(/assets/media/bg-apartment.png);">
     <main>
         <section id="page-title">
@@ -43,7 +45,7 @@
                                             </div>
                                             <div class="col-8">
                                                 <ul>
-                                                    <li> Accomodates: <span>@Model.PersonLimitSize</span></li>
+                                                    <li> Accomodates: <span>@Model.DetailedInformationApartment.PersonLimitSize</span></li>
                                                     <li> Size: <span>@Model.SizeOfRoomInSqrMeter</span></li>
                                                     <li> Beds: <span>@Model.BedCounts</span></li>
                                                 </ul>
@@ -57,11 +59,7 @@
                                             </div>
                                             <div class="col-8">
                                                 <p>
-                                                    Affordable luxury. Our Junior Suites are the
-                                                    perfect option if you’re looking for a little extra luxury.
-                                                    With an open 400 square foot floor plan, the Junior Suites offer
-                                                    the extra space you need to spread out and enjoy
-                                                    the breathtaking views of the city skyline.
+                                                    @Model.DetailedInformationApartment.DetailedDescription
                                                 </p>
                                             </div>
                                         </div>
