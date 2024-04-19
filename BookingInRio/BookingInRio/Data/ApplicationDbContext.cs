@@ -13,6 +13,8 @@ namespace BookingInRio.Data
 
         public DbSet<DetailedApartment> DetailedApartmentInfos { get; set; }
 
+        public DbSet<EmailList> SubscribersEmails { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<DetailedApartment>().HasData(
