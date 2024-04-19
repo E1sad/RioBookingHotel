@@ -1,6 +1,4 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
+﻿@model SearchModel
 <body style="background-image: url(/assets/media/bg-image.jpg);">
 
     <main>
@@ -16,13 +14,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-10">
-                        <form action="#">
-                            <input type="date" class="date">
-                            <input type="date" class="date">
-                            <input type="number" class="count">
-                            <input type="number" class="count">
+                        @using (Html.BeginForm("Search", "OurApartment", FormMethod.Post))
+                        {
+                            <input name="StartingTime" type="date" class="date" placeholder="Start Date">
+                            <input name="EndingTime" type="date" class="date" placeholder="End Date">
+                            <input name="PersonCount" type="number" class="count" placeholder="Person count">
+                            <input name="BedCount" type="number" class="count" placeholder="Bed count">
                             <button type="submit">Search</button>
-                        </form>
+                        }
                         <h1>A Home in the Heart of the City</h1>
 
                     </div>
@@ -93,5 +92,3 @@
 
     <script src="assets/JS/main.js"></script>
 </body>
-
-</html>

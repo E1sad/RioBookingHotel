@@ -30,6 +30,14 @@ namespace BookingInRio.Controllers
             }*/
             return View(Apartments);
         }
+
+        [HttpPost]
+        public IActionResult Index(List<AboutApartment> apartments)
+        {
+            if (apartments == null) { return RedirectToAction("Index", "Home"); } /*TEMPROARY, After NotFOund page created,
+                                                                                   * this should cahnge*/
+            return View(apartments);
+        }
         public IActionResult Apartment(int? id)
         {
             if (id == null || id == 0) {return NotFound(); }
@@ -47,5 +55,19 @@ namespace BookingInRio.Controllers
             if (apart == null) { return NotFound(); }
             return View(apart);
         }
+        [HttpPost]
+        public IActionResult Search(SearchModel searchData) {
+            if(searchData == null ) { return NotFound(); }
+
+            List<AboutApartment>? apartments = 
+                _db.AboutApartments.Include(apart=>apart.DetailedInformationApartment).Include(apart=>apart.ReservedTimes)
+                .Where(apart=>apart.BedCounts >= searchData.BedCount)
+                .Where(apart=>apart.DetailedInformationApartment.PersonLimitSize >= searchData.PersonCount)
+                .Where(apart=>apart.ReservedTimes
+                .Any(rt=>rt.StartTime >= searchData.EndingTime && rt.EndTime <= searchData.StartingTime))
+                .ToList();
+            return View("Index",apartments);
+        }
+
     }
 }

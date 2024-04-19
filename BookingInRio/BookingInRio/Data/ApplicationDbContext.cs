@@ -14,9 +14,19 @@ namespace BookingInRio.Data
         public DbSet<DetailedApartment> DetailedApartmentInfos { get; set; }
 
         public DbSet<EmailList> SubscribersEmails { get; set; }
+        
+        public DbSet<DatesApartmentReserved> DatesApartmentsReserved { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<DatesApartmentReserved>().HasData(
+                new DatesApartmentReserved
+                {
+                    Id = 1,
+                    StartTime = new DateTime(2024,04,22),
+                    EndTime = new DateTime(2024, 04, 26),
+                    ApartDi = 1,
+                });
             modelBuilder.Entity<DetailedApartment>().HasData(
                 new DetailedApartment
                 {

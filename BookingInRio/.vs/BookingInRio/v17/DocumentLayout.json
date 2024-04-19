@@ -3,32 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Migrations\\20240419125107_SeedToDatesApartmentReserved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookingInRio\\Migrations\\20240419125107_SeedToDatesApartmentReserved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\controllers\\ourapartmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\controllers\\ourapartmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Migrations\\20240419052731_AddNewEmailListTableToDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookingInRio\\Migrations\\20240419052731_AddNewEmailListTableToDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\migrations\\20240419122521_newmigrationaftersecondgreatperge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\migrations\\20240419122521_newmigrationaftersecondgreatperge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\models\\emaillist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\models\\emaillist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\controllers\\ourapartmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\controllers\\ourapartmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\models\\datesapartmentreserved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\models\\datesapartmentreserved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\models\\aboutapartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\models\\aboutapartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\models\\emaillist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\models\\emaillist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\views\\ourapartment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\views\\ourapartment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\wwwroot\\assets\\css\\style.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\wwwroot\\assets\\css\\style.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\views\\ourapartment\\apartment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\views\\ourapartment\\apartment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\services\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,10 +99,6 @@
       "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\views\\ourapartment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\views\\ourapartment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\views\\rio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\views\\rio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -87,16 +107,8 @@
       "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\wwwroot\\assets\\css\\lightslider.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\wwwroot\\assets\\css\\style.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\wwwroot\\assets\\css\\style.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\views\\ourapartment\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -111,16 +123,8 @@
       "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\migrations\\20240418101605_seedtoaboutapartmentanddetailedapartmenttables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\migrations\\20240418101605_seedtoaboutapartmentanddetailedapartmenttables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|c:\\users\\user\\desktop\\cloneofwixhotlebookingwebsite\\bookinginrio\\bookinginrio\\migrations\\20240418101320_firstmigrationaftergreatperge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01EAC524-1109-4342-99DB-62F090FD2C62}|BookingInRio\\BookingInRio.csproj|solutionrelative:bookinginrio\\migrations\\20240418101320_firstmigrationaftergreatperge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\SearchModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookingInRio\\Models\\SearchModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -130,62 +134,199 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EmailList.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\EmailList.cs",
-              "RelativeDocumentMoniker": "BookingInRio\\Models\\EmailList.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\EmailList.cs",
-              "RelativeToolTip": "BookingInRio\\Models\\EmailList.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "20240419125107_SeedToDatesApartmentReserved.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Migrations\\20240419125107_SeedToDatesApartmentReserved.cs",
+              "RelativeDocumentMoniker": "BookingInRio\\Migrations\\20240419125107_SeedToDatesApartmentReserved.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Migrations\\20240419125107_SeedToDatesApartmentReserved.cs",
+              "RelativeToolTip": "BookingInRio\\Migrations\\20240419125107_SeedToDatesApartmentReserved.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T05:16:34.341Z",
+              "WhenOpened": "2024-04-19T12:51:08.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "BookingInRio\\Controllers\\ContactController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "BookingInRio\\Controllers\\ContactController.cs",
-              "ViewState": "AQIAABAAAADAzMzMzMwiwCIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T11:20:48.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\appsettings.json",
-              "RelativeDocumentMoniker": "BookingInRio\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\appsettings.json",
-              "RelativeToolTip": "BookingInRio\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-15T07:34:09.135Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "BookingInRio\\Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "BookingInRio\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAA+AAAA",
+              "ViewState": "AQIAAA0AAADgzMzMzMw9wBsAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T07:47:53.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatesApartmentReserved.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\DatesApartmentReserved.cs",
+              "RelativeDocumentMoniker": "BookingInRio\\Models\\DatesApartmentReserved.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\DatesApartmentReserved.cs",
+              "RelativeToolTip": "BookingInRio\\Models\\DatesApartmentReserved.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T12:03:33.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OurApartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Controllers\\OurApartmentController.cs",
+              "RelativeDocumentMoniker": "BookingInRio\\Controllers\\OurApartmentController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Controllers\\OurApartmentController.cs",
+              "RelativeToolTip": "BookingInRio\\Controllers\\OurApartmentController.cs",
+              "ViewState": "AQIAADQAAADg//////8jwEIAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:44:48.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240419122521_NewMigrationAfterSecondGreatPerge.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Migrations\\20240419122521_NewMigrationAfterSecondGreatPerge.cs",
+              "RelativeDocumentMoniker": "BookingInRio\\Migrations\\20240419122521_NewMigrationAfterSecondGreatPerge.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Migrations\\20240419122521_NewMigrationAfterSecondGreatPerge.cs",
+              "RelativeToolTip": "BookingInRio\\Migrations\\20240419122521_NewMigrationAfterSecondGreatPerge.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAGYAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T12:25:21.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AboutApartment.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\AboutApartment.cs",
+              "RelativeDocumentMoniker": "BookingInRio\\Models\\AboutApartment.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\AboutApartment.cs",
+              "RelativeToolTip": "BookingInRio\\Models\\AboutApartment.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA5wBMAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T07:42:45.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BookingInRio\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BookingInRio\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAcAAAAAMzMzMzMLwBAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:39:06.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "EmailList.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\EmailList.cs",
+              "RelativeDocumentMoniker": "BookingInRio\\Models\\EmailList.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\EmailList.cs",
+              "RelativeToolTip": "BookingInRio\\Models\\EmailList.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA+wAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T05:16:34.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookingInRio\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BookingInRio\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T10:00:18.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SearchModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\SearchModel.cs",
+              "RelativeDocumentMoniker": "BookingInRio\\Models\\SearchModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\SearchModel.cs",
+              "RelativeToolTip": "BookingInRio\\Models\\SearchModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T10:37:51.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\OurApartment\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookingInRio\\Views\\OurApartment\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\OurApartment\\Index.cshtml",
+              "RelativeToolTip": "BookingInRio\\Views\\OurApartment\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T09:46:33.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "BookingInRio\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "BookingInRio\\Controllers\\ContactController.cs",
+              "ViewState": "AQIAAAYAAABQZmZmZmYkwBkAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T11:20:48.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BookingInRio\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BookingInRio\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAuwHcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T09:55:15.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\appsettings.json",
+              "RelativeDocumentMoniker": "BookingInRio\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\appsettings.json",
+              "RelativeToolTip": "BookingInRio\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-15T07:34:09.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "style.min.css",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\css\\style.min.css",
+              "RelativeDocumentMoniker": "BookingInRio\\wwwroot\\assets\\css\\style.min.css",
+              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\css\\style.min.css",
+              "RelativeToolTip": "BookingInRio\\wwwroot\\assets\\css\\style.min.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-15T10:21:56.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "BookingInRio\\Services\\EmailService.cs",
@@ -197,46 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BookingInRio\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BookingInRio\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAqwI4AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T09:55:15.681Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OurApartmentController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Controllers\\OurApartmentController.cs",
-              "RelativeDocumentMoniker": "BookingInRio\\Controllers\\OurApartmentController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Controllers\\OurApartmentController.cs",
-              "RelativeToolTip": "BookingInRio\\Controllers\\OurApartmentController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwBMAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:44:48.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20240419052731_AddNewEmailListTableToDb.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Migrations\\20240419052731_AddNewEmailListTableToDb.cs",
-              "RelativeDocumentMoniker": "BookingInRio\\Migrations\\20240419052731_AddNewEmailListTableToDb.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Migrations\\20240419052731_AddNewEmailListTableToDb.cs",
-              "RelativeToolTip": "BookingInRio\\Migrations\\20240419052731_AddNewEmailListTableToDb.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T05:27:31.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "Apartment.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\OurApartment\\Apartment.cshtml",
               "RelativeDocumentMoniker": "BookingInRio\\Views\\OurApartment\\Apartment.cshtml",
@@ -248,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "MailSettings.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Services\\MailSettings.cs",
               "RelativeDocumentMoniker": "BookingInRio\\Services\\MailSettings.cs",
@@ -260,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Program.cs",
               "RelativeDocumentMoniker": "BookingInRio\\Program.cs",
@@ -272,20 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AboutApartment.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\AboutApartment.cs",
-              "RelativeDocumentMoniker": "BookingInRio\\Models\\AboutApartment.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\AboutApartment.cs",
-              "RelativeToolTip": "BookingInRio\\Models\\AboutApartment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T07:42:45.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\Contact\\Index.cshtml",
               "RelativeDocumentMoniker": "BookingInRio\\Views\\Contact\\Index.cshtml",
@@ -297,31 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "20240418101320_FirstMigrationAfterGreatPerge.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Migrations\\20240418101320_FirstMigrationAfterGreatPerge.cs",
-              "RelativeDocumentMoniker": "BookingInRio\\Migrations\\20240418101320_FirstMigrationAfterGreatPerge.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Migrations\\20240418101320_FirstMigrationAfterGreatPerge.cs",
-              "RelativeToolTip": "BookingInRio\\Migrations\\20240418101320_FirstMigrationAfterGreatPerge.cs",
-              "ViewState": "AQIAACgAAAAAAQAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T10:13:20.982Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "20240418101605_SeedToAboutApartmentAndDetailedApartmentTables.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Migrations\\20240418101605_SeedToAboutApartmentAndDetailedApartmentTables.cs",
-              "RelativeDocumentMoniker": "BookingInRio\\Migrations\\20240418101605_SeedToAboutApartmentAndDetailedApartmentTables.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Migrations\\20240418101605_SeedToAboutApartmentAndDetailedApartmentTables.cs",
-              "RelativeToolTip": "BookingInRio\\Migrations\\20240418101605_SeedToAboutApartmentAndDetailedApartmentTables.cs",
-              "ViewState": "AQIAAAoAAACAmZmZmZkhwB4AAABwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T10:16:05.549Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "20240418100642_FirstMigrationAfterGreatPerge.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Migrations\\20240418100642_FirstMigrationAfterGreatPerge.cs",
               "RelativeDocumentMoniker": "BookingInRio\\Migrations\\20240418100642_FirstMigrationAfterGreatPerge.cs",
@@ -333,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "BookingInRio.csproj",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\BookingInRio.csproj",
               "RelativeDocumentMoniker": "BookingInRio\\BookingInRio.csproj",
@@ -345,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "DetailedInfoApartmentViewMod.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\ViewModels\\DetailedInfoApartmentViewMod.cs",
               "RelativeDocumentMoniker": "BookingInRio\\ViewModels\\DetailedInfoApartmentViewMod.cs",
@@ -357,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "DetailedApartment.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\DetailedApartment.cs",
               "RelativeDocumentMoniker": "BookingInRio\\Models\\DetailedApartment.cs",
@@ -369,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "BookingInRio\\Models\\ErrorViewModel.cs",
@@ -381,19 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\OurApartment\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookingInRio\\Views\\OurApartment\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\OurApartment\\Index.cshtml",
-              "RelativeToolTip": "BookingInRio\\Views\\OurApartment\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T09:46:33.267Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\Rio\\Index.cshtml",
               "RelativeDocumentMoniker": "BookingInRio\\Views\\Rio\\Index.cshtml",
@@ -405,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "lightslider.css",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\css\\lightslider.css",
               "RelativeDocumentMoniker": "BookingInRio\\wwwroot\\assets\\css\\lightslider.css",
@@ -417,31 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "style.min.css",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\css\\style.min.css",
-              "RelativeDocumentMoniker": "BookingInRio\\wwwroot\\assets\\css\\style.min.css",
-              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\css\\style.min.css",
-              "RelativeToolTip": "BookingInRio\\wwwroot\\assets\\css\\style.min.css",
-              "ViewState": "AQIAAEkCAAAAnpmZmZkswKYDAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-15T10:21:56.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookingInRio\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "BookingInRio\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T10:00:18.22Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "CheckOut.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\OurApartment\\CheckOut.cshtml",
               "RelativeDocumentMoniker": "BookingInRio\\Views\\OurApartment\\CheckOut.cshtml",
@@ -453,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "BookingInRio\\Views\\Home\\Privacy.cshtml",
@@ -465,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "RioController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Controllers\\RioController.cs",
               "RelativeDocumentMoniker": "BookingInRio\\Controllers\\RioController.cs",
@@ -477,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "BookingInRio\\Properties\\launchSettings.json",
@@ -486,18 +515,6 @@
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-09T11:07:11.453Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "BookingInRio\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "BookingInRio\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:39:06.769Z"
             }
           ]
         }

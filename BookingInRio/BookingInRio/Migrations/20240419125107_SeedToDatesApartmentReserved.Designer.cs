@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookingInRio.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240419052731_AddNewEmailListTableToDb")]
-    partial class AddNewEmailListTableToDb
+    [Migration("20240419125107_SeedToDatesApartmentReserved")]
+    partial class SeedToDatesApartmentReserved
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -97,6 +97,42 @@ namespace BookingInRio.Migrations
                         });
                 });
 
+            modelBuilder.Entity("BookingInRio.Models.DatesApartmentReserved", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("AboutApartmentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ApartDi")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("EndTime")
+                        .HasColumnType("date");
+
+                    b.Property<DateTime>("StartTime")
+                        .HasColumnType("date");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AboutApartmentId");
+
+                    b.ToTable("DatesApartmentsReserved");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ApartDi = 1,
+                            EndTime = new DateTime(2024, 4, 26, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartTime = new DateTime(2024, 4, 22, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
+                });
+
             modelBuilder.Entity("BookingInRio.Models.DetailedApartment", b =>
                 {
                     b.Property<int>("Id")
@@ -166,6 +202,13 @@ namespace BookingInRio.Migrations
                     b.ToTable("SubscribersEmails");
                 });
 
+            modelBuilder.Entity("BookingInRio.Models.DatesApartmentReserved", b =>
+                {
+                    b.HasOne("BookingInRio.Models.AboutApartment", null)
+                        .WithMany("ReservedTimes")
+                        .HasForeignKey("AboutApartmentId");
+                });
+
             modelBuilder.Entity("BookingInRio.Models.DetailedApartment", b =>
                 {
                     b.HasOne("BookingInRio.Models.AboutApartment", "AboutApartment")
@@ -181,6 +224,8 @@ namespace BookingInRio.Migrations
                 {
                     b.Navigation("DetailedInformationApartment")
                         .IsRequired();
+
+                    b.Navigation("ReservedTimes");
                 });
 #pragma warning restore 612, 618
         }

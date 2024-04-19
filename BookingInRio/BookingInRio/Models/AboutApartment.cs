@@ -17,7 +17,7 @@ namespace BookingInRio.Models
         public double PriceOfRoom { get; set; }
         public int PersonLimitSize { get; set; }
         public string ApartmentThumbnailImagePath { get; set; }
-
         public DetailedApartment DetailedInformationApartment { get; set; }
+        public List<DatesApartmentReserved> ReservedTimes { get; set; }
     }
 }

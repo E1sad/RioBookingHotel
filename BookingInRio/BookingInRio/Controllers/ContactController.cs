@@ -10,25 +10,20 @@ namespace BookingInRio.Controllers
     {
         private readonly ApplicationDbContext _db;
         public ContactController(ApplicationDbContext db){_db = db;}
-        public IActionResult Index()
-        {
+        public IActionResult Index()        {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Subscribe(string email)
-        {
+        public IActionResult Subscribe(string email)        {
             if(email == null) { return Json(new { success = false, message = "Email is required!" }); }
-            EmailList obj = new EmailList
-            {
-                Email = email,
-                date = DateTime.Now,
-            };
+            if (_db.SubscribersEmails.Any(e=>e.Email == email)) { 
+                return Json(new { success = false, message = "You already subscribed!"}); }
+            EmailList obj = new EmailList{ Email = email, date = DateTime.Now,};
             if(obj == null) { return Json(new { success = false, message = "Try again something went wrong!"}); }
             _db.SubscribersEmails.Add(obj);
             _db.SaveChanges();
             return Json(new { success = true, message = "Your email susccessfuly added to subscribers list!" }) ;
         }
-
     }
 }
