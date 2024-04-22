@@ -19,5 +19,6 @@ namespace BookingInRio.Models
         public string ApartmentThumbnailImagePath { get; set; }
         public DetailedApartment DetailedInformationApartment { get; set; }
         public List<DatesApartmentReserved> ReservedTimes { get; set; }
+        public List<ApartmentImage> Images { get; set; }
     }
 }

@@ -11,7 +11,9 @@ namespace BookingInRio.Models
         public DateTime StartTime { get; set; }
         [Required, Column(TypeName = "date")]
         public DateTime EndTime { get; set;}
-        [ForeignKey("AboutApartment")]
-        public int ApartDi { get; set; }
+        public int ApartId { get; set; }
+
+        [ForeignKey("ApartId")]
+        public AboutApartment Apartment { get; set; }
     }
 }

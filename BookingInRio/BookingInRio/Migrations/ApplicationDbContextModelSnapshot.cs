@@ -56,7 +56,7 @@ namespace BookingInRio.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AboutApartments");
+                    b.ToTable("AboutApartments", (string)null);
 
                     b.HasData(
                         new
@@ -94,6 +94,84 @@ namespace BookingInRio.Migrations
                         });
                 });
 
+            modelBuilder.Entity("BookingInRio.Models.ApartmentImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ApartmentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Path")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApartmentId");
+
+                    b.ToTable("ApartmentImages", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ApartmentId = 1,
+                            Path = "/assets/media/apartment-1.jpg"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ApartmentId = 1,
+                            Path = "/assets/media/aparment-long.jpg"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ApartmentId = 1,
+                            Path = "/assets/media/aparment-short.jpg"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            ApartmentId = 2,
+                            Path = "/assets/media/download(1).jpg"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            ApartmentId = 2,
+                            Path = "/assets/media/apartment-2.jpg"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            ApartmentId = 2,
+                            Path = "/assets/media/download.jpg"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            ApartmentId = 3,
+                            Path = "/assets/media/example.jpg"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            ApartmentId = 3,
+                            Path = "/assets/media/standard.jpg"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            ApartmentId = 3,
+                            Path = "/assets/media/42442.jpg"
+                        });
+                });
+
             modelBuilder.Entity("BookingInRio.Models.DatesApartmentReserved", b =>
                 {
                     b.Property<int>("Id")
@@ -102,10 +180,7 @@ namespace BookingInRio.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("AboutApartmentId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ApartDi")
+                    b.Property<int>("ApartId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("EndTime")
@@ -116,29 +191,29 @@ namespace BookingInRio.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AboutApartmentId");
+                    b.HasIndex("ApartId");
 
-                    b.ToTable("DatesApartmentsReserved");
+                    b.ToTable("DatesApartmentsReserved", (string)null);
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            ApartDi = 1,
+                            ApartId = 1,
                             EndTime = new DateTime(2024, 4, 26, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             StartTime = new DateTime(2024, 4, 22, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             Id = 2,
-                            ApartDi = 3,
+                            ApartId = 3,
                             EndTime = new DateTime(2024, 3, 26, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             StartTime = new DateTime(2024, 3, 22, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             Id = 3,
-                            ApartDi = 2,
+                            ApartId = 2,
                             EndTime = new DateTime(2024, 4, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             StartTime = new DateTime(2024, 4, 24, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
@@ -167,7 +242,7 @@ namespace BookingInRio.Migrations
                     b.HasIndex("AboutApartmentId")
                         .IsUnique();
 
-                    b.ToTable("DetailedApartmentInfos");
+                    b.ToTable("DetailedApartmentInfos", (string)null);
 
                     b.HasData(
                         new
@@ -210,14 +285,29 @@ namespace BookingInRio.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("SubscribersEmails");
+                    b.ToTable("SubscribersEmails", (string)null);
+                });
+
+            modelBuilder.Entity("BookingInRio.Models.ApartmentImage", b =>
+                {
+                    b.HasOne("BookingInRio.Models.AboutApartment", "Apartment")
+                        .WithMany()
+                        .HasForeignKey("ApartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Apartment");
                 });
 
             modelBuilder.Entity("BookingInRio.Models.DatesApartmentReserved", b =>
                 {
-                    b.HasOne("BookingInRio.Models.AboutApartment", null)
+                    b.HasOne("BookingInRio.Models.AboutApartment", "Apartment")
                         .WithMany("ReservedTimes")
-                        .HasForeignKey("AboutApartmentId");
+                        .HasForeignKey("ApartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Apartment");
                 });
 
             modelBuilder.Entity("BookingInRio.Models.DetailedApartment", b =>

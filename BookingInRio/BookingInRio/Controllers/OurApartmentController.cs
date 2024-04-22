@@ -30,7 +30,8 @@ namespace BookingInRio.Controllers
         public IActionResult Apartment(int? id)
         {
             if (id == null || id == 0) {return NotFound(); }
-            AboutApartment? apart = _db.AboutApartments.Include(d => d.DetailedInformationApartment).FirstOrDefault(a => a.Id == id);
+            AboutApartment? apart = _db.AboutApartments.Include(d => d.DetailedInformationApartment)
+                .Include(i=>i.Images).FirstOrDefault(a => a.Id == id);
             if (apart == null) { return NotFound(); }
             return View(apart);
         }

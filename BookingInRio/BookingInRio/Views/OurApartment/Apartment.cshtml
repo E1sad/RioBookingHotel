@@ -22,14 +22,12 @@
                                 
                                 <div class="slider">
                                     <ul id="imageGallery">
-                                        <li data-thumb="@Model.ApartmentThumbnailImagePath" data-src="@Model.ApartmentThumbnailImagePath">
-                                            <img src="@Model.ApartmentThumbnailImagePath" />
+
+                                        @foreach(ApartmentImage image in Model.Images){
+                                            <li data-thumb="@image.Path" data-src="@image.Path">
+                                                <img src="@image.Path" />
                                         </li>
-                                        <li data-thumb="@Model.ApartmentThumbnailImagePath" data-src="@Model.ApartmentThumbnailImagePath">
-                                            <img src="@Model.ApartmentThumbnailImagePath" />
-                                        </li>
-                                        <li data-thumb="@Model.ApartmentThumbnailImagePath" data-src="@Model.ApartmentThumbnailImagePath">
-                                            <img src="@Model.ApartmentThumbnailImagePath" />
+                                        }
                                         </li>
                                     </ul>
                                 </div>

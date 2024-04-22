@@ -29,6 +29,14 @@
       "PackagePath": "staticwebassets\\assets\\media\\123.jpg"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\42442.jpg",
+      "PackagePath": "staticwebassets\\assets\\media\\42442.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\42449.jpg",
+      "PackagePath": "staticwebassets\\assets\\media\\42449.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\aparment-long.jpg",
       "PackagePath": "staticwebassets\\assets\\media\\aparment-long.jpg"
     },
@@ -61,6 +69,14 @@
       "PackagePath": "staticwebassets\\assets\\media\\bg-rio.png"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\download (1).jpg",
+      "PackagePath": "staticwebassets\\assets\\media\\download (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\download.jpg",
+      "PackagePath": "staticwebassets\\assets\\media\\download.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\example.jpg",
       "PackagePath": "staticwebassets\\assets\\media\\example.jpg"
     },
@@ -73,12 +89,20 @@
       "PackagePath": "staticwebassets\\assets\\media\\feedback.jpg"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\images.jpg",
+      "PackagePath": "staticwebassets\\assets\\media\\images.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\location.jpg",
       "PackagePath": "staticwebassets\\assets\\media\\location.jpg"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\rio.jpg",
       "PackagePath": "staticwebassets\\assets\\media\\rio.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\standard.jpg",
+      "PackagePath": "staticwebassets\\assets\\media\\standard.jpg"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\sass\\_apartment.scss",

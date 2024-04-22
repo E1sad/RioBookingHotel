@@ -17,29 +17,86 @@ namespace BookingInRio.Data
         
         public DbSet<DatesApartmentReserved> DatesApartmentsReserved { get; set; }
 
+        public DbSet<ApartmentImage> ApartmentImages { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<ApartmentImage>().HasData(
+                new ApartmentImage
+                {
+                    Id = 1,
+                    Path = "/assets/media/apartment-1.jpg",
+                    ApartmentId = 1
+                },
+                new ApartmentImage
+                {
+                    Id=2,
+                    Path = "/assets/media/aparment-long.jpg",
+                    ApartmentId = 1
+                },
+                new ApartmentImage
+                {
+                    Id = 3,
+                    Path = "/assets/media/aparment-short.jpg",
+                    ApartmentId = 1
+                },
+                new ApartmentImage
+                {
+                    Id = 4,
+                    Path = "/assets/media/download(1).jpg",
+                    ApartmentId = 2
+                },
+                new ApartmentImage
+                {
+                    Id = 5,
+                    Path = "/assets/media/apartment-2.jpg",
+                    ApartmentId = 2
+                },
+                new ApartmentImage
+                {
+                    Id = 6,
+                    Path = "/assets/media/download.jpg",
+                    ApartmentId = 2
+                },
+                new ApartmentImage
+                {
+                    Id = 7,
+                    Path = "/assets/media/example.jpg",
+                    ApartmentId = 3
+                },
+                new ApartmentImage
+                {
+                    Id = 8,
+                    Path = "/assets/media/standard.jpg",
+                    ApartmentId = 3
+                },
+                new ApartmentImage
+                {
+                    Id = 9,
+                    Path = "/assets/media/42442.jpg",
+                    ApartmentId = 3
+                });
             modelBuilder.Entity<DatesApartmentReserved>().HasData(
                 new DatesApartmentReserved
                 {
                     Id = 1,
                     StartTime = new DateTime(2024,04,22),
                     EndTime = new DateTime(2024, 04, 26),
-                    ApartDi = 1,
+                    ApartId = 1,
                 },
                 new DatesApartmentReserved
                 {
                     Id = 2,
                     StartTime = new DateTime(2024, 03, 22),
                     EndTime = new DateTime(2024, 03, 26),
-                    ApartDi = 3,
+                    ApartId = 3,
                 },
                 new DatesApartmentReserved
                 {
                     Id = 3,
                     StartTime = new DateTime(2024, 04, 24),
                     EndTime = new DateTime(2024, 04, 28),
-                    ApartDi = 2,
+                    ApartId = 2,
                 });
             modelBuilder.Entity<DetailedApartment>().HasData(
                 new DetailedApartment
