@@ -15,7 +15,7 @@ namespace BookingInRio.Controllers
         }
 
         [HttpPost]
-        public IActionResult Subscribe(string email)        {
+        public IActionResult Subscribe(string email){
             if(email == null) { return Json(new { success = false, message = "Email is required!" }); }
             if (_db.SubscribersEmails.Any(e=>e.Email == email)) { 
                 return Json(new { success = false, message = "You already subscribed!"}); }

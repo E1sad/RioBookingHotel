@@ -8,20 +8,10 @@ namespace BookingInRio.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+        public HomeController(ILogger<HomeController> logger){_logger = logger;}
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+        public IActionResult Index(){return View();}
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -29,9 +19,6 @@ namespace BookingInRio.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult RedirectToMap()
-        {
-            return Redirect("/Contact/Index#viewMap");
-        }
+        public IActionResult RedirectToMap(){return Redirect("/Contact/Index#viewMap");}
     }
 }
