@@ -28,5 +28,10 @@ namespace BookingInRio.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult RedirectToMap()
+        {
+            return Redirect("/Contact/Index#viewMap");
+        }
     }
 }

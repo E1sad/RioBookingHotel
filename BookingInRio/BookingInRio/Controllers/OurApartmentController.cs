@@ -64,10 +64,20 @@ namespace BookingInRio.Controllers
                 .Where(apart=>apart.BedCounts >= searchData.BedCount)
                 .Where(apart=>apart.DetailedInformationApartment.PersonLimitSize >= searchData.PersonCount)
                 .Where(apart=>apart.ReservedTimes
-                .Any(rt=>rt.StartTime >= searchData.EndingTime && rt.EndTime <= searchData.StartingTime))
+                .Any(rt => ((rt.EndTime < searchData.StartingTime  ) || (rt.StartTime > searchData.EndingTime))))
                 .ToList();
             return View("Index",apartments);
         }
+
+
+        #region Not Web Dev
+        private bool isInRange(DateTime starting, DateTime ending, DateTime searchStartingTime, DateTime searchEndingTime)
+        {
+            if(starting > searchEndingTime && starting > searchStartingTime) { return true; }
+            else if(ending < searchStartingTime && ending < searchEndingTime) {  return true; }
+            return false;
+        }
+        #endregion
 
     }
 }

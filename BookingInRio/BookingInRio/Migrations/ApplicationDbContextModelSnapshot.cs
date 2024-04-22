@@ -127,6 +127,20 @@ namespace BookingInRio.Migrations
                             ApartDi = 1,
                             EndTime = new DateTime(2024, 4, 26, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             StartTime = new DateTime(2024, 4, 22, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ApartDi = 3,
+                            EndTime = new DateTime(2024, 3, 26, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartTime = new DateTime(2024, 3, 22, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ApartDi = 2,
+                            EndTime = new DateTime(2024, 4, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartTime = new DateTime(2024, 4, 24, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 

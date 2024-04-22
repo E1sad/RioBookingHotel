@@ -26,6 +26,20 @@ namespace BookingInRio.Data
                     StartTime = new DateTime(2024,04,22),
                     EndTime = new DateTime(2024, 04, 26),
                     ApartDi = 1,
+                },
+                new DatesApartmentReserved
+                {
+                    Id = 2,
+                    StartTime = new DateTime(2024, 03, 22),
+                    EndTime = new DateTime(2024, 03, 26),
+                    ApartDi = 3,
+                },
+                new DatesApartmentReserved
+                {
+                    Id = 3,
+                    StartTime = new DateTime(2024, 04, 24),
+                    EndTime = new DateTime(2024, 04, 28),
+                    ApartDi = 2,
                 });
             modelBuilder.Entity<DetailedApartment>().HasData(
                 new DetailedApartment

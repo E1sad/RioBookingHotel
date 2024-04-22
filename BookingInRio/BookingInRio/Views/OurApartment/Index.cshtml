@@ -15,13 +15,7 @@
                 <div class="row">
                     <div class="col-10">
                         <h1>Our Rooms</h1>
-                        <form action="#">
-                            <input type="date" class="date">
-                            <input type="date" class="date">
-                            <input type="number" class="count">
-                            <input type="number" class="count">
-                            <button type="submit">Search</button>
-                        </form>
+                        <partial name="_SearchForm" model="new SearchModel()"></partial>
 
                         @foreach (AboutApartment apart in Model.OrderBy(u=>u.PriceOfRoom))
                         {
