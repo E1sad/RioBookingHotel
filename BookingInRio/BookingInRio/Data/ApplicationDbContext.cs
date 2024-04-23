@@ -1,4 +1,5 @@
 ﻿using BookingInRio.Models;
+using Microsoft.AspNetCore.Hosting.StaticWebAssets;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookingInRio.Data
@@ -19,8 +20,108 @@ namespace BookingInRio.Data
 
         public DbSet<ApartmentImage> ApartmentImages { get; set; }
 
+        public DbSet<Amenity> Amenities { get; set; }
+
+        public DbSet<AmenitiesToDetailedApartments> AmenitiesToDetailedApartments { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<AmenitiesToDetailedApartments>().HasData(
+                new AmenitiesToDetailedApartments { 
+                    Id = 1,
+                    AmenityId = 1,
+                    ApartmentId = 1
+                },
+                new AmenitiesToDetailedApartments                {
+                    Id = 2,
+                    AmenityId = 3,
+                    ApartmentId = 1
+                },
+                new AmenitiesToDetailedApartments
+                {
+                    Id = 3,
+                    AmenityId = 1,
+                    ApartmentId = 2
+                },
+                new AmenitiesToDetailedApartments
+                {
+                    Id = 4,
+                    AmenityId = 3,
+                    ApartmentId = 2
+                },
+                new AmenitiesToDetailedApartments
+                {
+                    Id = 5,
+                    AmenityId = 4,
+                    ApartmentId = 2
+                },
+                new AmenitiesToDetailedApartments
+                {
+                    Id = 6,
+                    AmenityId = 5,
+                    ApartmentId = 2
+                },
+                new AmenitiesToDetailedApartments
+                {
+                    Id = 7,
+                    AmenityId = 1,
+                    ApartmentId = 3
+                },
+                new AmenitiesToDetailedApartments
+                {
+                    Id = 8,
+                    AmenityId = 2,
+                    ApartmentId = 3
+                },
+                new AmenitiesToDetailedApartments
+                {
+                    Id = 9,
+                    AmenityId = 3,
+                    ApartmentId = 3
+                },
+                new AmenitiesToDetailedApartments
+                {
+                    Id = 10,
+                    AmenityId = 4,
+                    ApartmentId = 3
+                },
+                new AmenitiesToDetailedApartments
+                {
+                    Id = 11,
+                    AmenityId = 5,
+                    ApartmentId = 3
+                });
+            modelBuilder.Entity<Amenity>().HasData(
+                new Amenity
+                {
+                    Id = 1,
+                    Name = "Wi - Fi",
+                    ImagePath = "/assets/media/AmenityIcons/wifi.png"
+                },
+                new Amenity
+                {
+                    Id = 2,
+                    Name = "Gym",
+                    ImagePath = "/assets/media/AmenityIcons/gym.png"
+                },
+                new Amenity
+                {
+                    Id = 3,
+                    Name = "Paper",
+                    ImagePath = "/assets/media/AmenityIcons/paper.png"
+                },
+                new Amenity
+                {
+                    Id = 4,
+                    Name = "Parking",
+                    ImagePath = "/assets/media/AmenityIcons/parking.png"
+                },
+                new Amenity
+                {
+                    Id = 5,
+                    Name = "Slipper",
+                    ImagePath = "/assets/media/AmenityIcons/slipper.png"
+                });
             modelBuilder.Entity<ApartmentImage>().HasData(
                 new ApartmentImage
                 {
@@ -43,7 +144,7 @@ namespace BookingInRio.Data
                 new ApartmentImage
                 {
                     Id = 4,
-                    Path = "/assets/media/download(1).jpg",
+                    Path = "/assets/media/download (1).jpg",
                     ApartmentId = 2
                 },
                 new ApartmentImage

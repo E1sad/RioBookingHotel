@@ -16,7 +16,12 @@ namespace BookingInRio.Controllers
         }
         public IActionResult Index()
         {
-            List<AboutApartment> Apartments = _db.AboutApartments.ToList();
+            /*List<AboutApartment> Apartments = _db.AboutApartments.ToList();*/
+            List<AboutApartment> Apartments = _db.AboutApartments
+                .Include(apart => apart.DetailedInformationApartment)
+                .ThenInclude(d=>d.AmenitiesToDetailedApartments)
+                .ThenInclude(a=>a.Amenity)
+                .ToList();
             return View(Apartments);
         }
 
@@ -30,8 +35,12 @@ namespace BookingInRio.Controllers
         public IActionResult Apartment(int? id)
         {
             if (id == null || id == 0) {return NotFound(); }
-            AboutApartment? apart = _db.AboutApartments.Include(d => d.DetailedInformationApartment)
-                .Include(i=>i.Images).FirstOrDefault(a => a.Id == id);
+            AboutApartment? apart = _db.AboutApartments
+                .Include(d => d.DetailedInformationApartment)
+                .ThenInclude(d=>d.AmenitiesToDetailedApartments)
+                .ThenInclude(d=>d.Amenity)
+                .Include(i=>i.Images)
+                .FirstOrDefault(a => a.Id == id);
             if (apart == null) { return NotFound(); }
             return View(apart);
         }
@@ -40,7 +49,11 @@ namespace BookingInRio.Controllers
             if(searchData == null ) { return NotFound(); }
             if (ModelState.IsValid){return View("Index");}
             List<AboutApartment>? apartments = 
-                _db.AboutApartments.Include(apart=>apart.DetailedInformationApartment).Include(apart=>apart.ReservedTimes)
+                _db.AboutApartments
+                .Include(apart=>apart.DetailedInformationApartment)
+                .ThenInclude(d => d.AmenitiesToDetailedApartments)
+                .ThenInclude(a=>a.Amenity)
+                .Include(apart=>apart.ReservedTimes)
                 .Where(apart=>apart.BedCounts >= searchData.BedCount)
                 .Where(apart=>apart.DetailedInformationApartment.PersonLimitSize >= searchData.PersonCount)
                 .Where(apart=>apart.ReservedTimes

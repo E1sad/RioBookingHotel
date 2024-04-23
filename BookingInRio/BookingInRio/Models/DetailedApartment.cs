@@ -15,5 +15,7 @@ namespace BookingInRio.Models
         public int AboutApartmentId { get; set; }
         public AboutApartment AboutApartment { get; set; }
 
+        public List<AmenitiesToDetailedApartments> AmenitiesToDetailedApartments { get; set; }
+
     }
 }

@@ -37,6 +37,26 @@
       "PackagePath": "staticwebassets\\assets\\media\\42449.jpg"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\AmenityIcons\\gym.png",
+      "PackagePath": "staticwebassets\\assets\\media\\AmenityIcons\\gym.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\AmenityIcons\\paper.png",
+      "PackagePath": "staticwebassets\\assets\\media\\AmenityIcons\\paper.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\AmenityIcons\\parking.png",
+      "PackagePath": "staticwebassets\\assets\\media\\AmenityIcons\\parking.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\AmenityIcons\\slipper.png",
+      "PackagePath": "staticwebassets\\assets\\media\\AmenityIcons\\slipper.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\AmenityIcons\\wifi.png",
+      "PackagePath": "staticwebassets\\assets\\media\\AmenityIcons\\wifi.png"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\CloneOfWixHotleBookingWebSite\\BookingInRio\\BookingInRio\\wwwroot\\assets\\media\\aparment-long.jpg",
       "PackagePath": "staticwebassets\\assets\\media\\aparment-long.jpg"
     },

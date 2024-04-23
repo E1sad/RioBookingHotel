@@ -36,9 +36,14 @@
                                             <li>Beds: <span>@apart.BedCounts</span> </li>
                                         </ul>
                                         <ul class="features">
-                                            <li title="WiFi">
-                                                <i class="fas fa-wifi"></i>
-                                            </li>
+
+                                            @foreach(var amenity in apart.DetailedInformationApartment.AmenitiesToDetailedApartments)
+                                            {
+                                                <li title="@amenity.Amenity.Name">
+                                                    <img src=@amenity.Amenity.ImagePath alt="" style="width: 30px; height: 30px;">
+                                                </li>
+                                            }
+
                                         </ul>
                                     </div>
                                     <div class="price">
