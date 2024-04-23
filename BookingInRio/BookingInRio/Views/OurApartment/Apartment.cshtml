@@ -85,11 +85,11 @@
                                     <span>From</span>
                                     <p>$@Model.PriceOfRoom</p>
                                     <span>Per Night</span>
-                                    <form action="#" method="post">
-                                        <input type="date">
-                                        <input type="date">
-                                        <input type="number">
-                                        <input type="number">
+                                    <form action="/OurApartment/CheckOut" method="post">
+                                        <input type="date" name="StartingTime"> 
+                                        <input type="date" name="Ending Time">
+                                        <input type="number" name="PersonCount" placeholder="Person Count">
+                                        <input type="number" name="BedCount" placeholder="Bed Count">
                                         <button type="submit">Book Now</button>
                                     </form>
                                 </div>

@@ -24,6 +24,8 @@ namespace BookingInRio.Data
 
         public DbSet<AmenitiesToDetailedApartments> AmenitiesToDetailedApartments { get; set; }
 
+        public DbSet<UserReservationData> UserReservationData { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<AmenitiesToDetailedApartments>().HasData(

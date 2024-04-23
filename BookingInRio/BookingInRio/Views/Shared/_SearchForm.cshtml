@@ -1,0 +1,10 @@
+﻿@model SearchModel
+
+@using (Html.BeginForm("Search", "OurApartment", FormMethod.Post))
+{
+    <input name="StartingTime" type="date" class="date" placeholder="Start Date">
+    <input name="EndingTime" type="date" class="date" placeholder="End Date">
+    <input name="PersonCount" type="number" class="count" placeholder="Person count">
+    <input name="BedCount" type="number" class="count" placeholder="Bed count">
+    <button type="submit">Search</button>
+}

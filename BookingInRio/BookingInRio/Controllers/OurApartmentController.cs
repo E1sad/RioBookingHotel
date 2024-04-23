@@ -1,7 +1,6 @@
 ﻿using BookingInRio.Data;
 using BookingInRio.Models;
 using BookingInRio.Services;
-using BookingInRio.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -47,19 +46,38 @@ namespace BookingInRio.Controllers
         [HttpPost]
         public IActionResult Search(SearchModel searchData) {
             if(searchData == null ) { return NotFound(); }
-            if (ModelState.IsValid){return View("Index");}
-            List<AboutApartment>? apartments = 
-                _db.AboutApartments
-                .Include(apart=>apart.DetailedInformationApartment)
-                .ThenInclude(d => d.AmenitiesToDetailedApartments)
-                .ThenInclude(a=>a.Amenity)
-                .Include(apart=>apart.ReservedTimes)
-                .Where(apart=>apart.BedCounts >= searchData.BedCount)
-                .Where(apart=>apart.DetailedInformationApartment.PersonLimitSize >= searchData.PersonCount)
-                .Where(apart=>apart.ReservedTimes
-                .Any(rt => ((rt.EndTime < searchData.StartingTime  ) || (rt.StartTime > searchData.EndingTime))))
-                .ToList();
-            return View("Index",apartments);
+                List<AboutApartment>? apartments =
+                    _db.AboutApartments
+                    .Include(apart => apart.DetailedInformationApartment)
+                    .ThenInclude(d => d.AmenitiesToDetailedApartments)
+                    .ThenInclude(a => a.Amenity)
+                    .Include(apart => apart.ReservedTimes)
+                    .Where(apart => apart.BedCounts >= searchData.BedCount)
+                    .Where(apart => apart.DetailedInformationApartment.PersonLimitSize >= searchData.PersonCount)
+                    .Where(apart => apart.ReservedTimes
+                    .Any(rt => ((rt.EndTime < searchData.StartingTime) || (rt.StartTime > searchData.EndingTime))))
+                    .ToList();
+                return View("Index", apartments);
+        }
+
+        [HttpPost]
+        public IActionResult CheckOut(UserReservationData data)
+        {
+            if (ModelState.IsValid) {
+
+                UserReservationData newData = new UserReservationData
+                {
+                    StartingDate = data.StartingDate,
+                    EndingTime = data.EndingTime,
+                    PersonCount = data.PersonCount,
+                    BedCount = data.BedCount,
+                    ApartmentId = data.ApartmentId  
+                };
+                _db.UserReservationData.Add(newData);
+                _db.SaveChanges();
+                return View("Apartment");
+            }
+            return View("CheckOut");
         }
 
     }

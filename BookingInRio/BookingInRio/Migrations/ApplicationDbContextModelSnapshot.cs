@@ -432,6 +432,36 @@ namespace BookingInRio.Migrations
                     b.ToTable("SubscribersEmails");
                 });
 
+            modelBuilder.Entity("BookingInRio.Models.UserReservationData", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ApartmentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BedCount")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("EndingTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("PersonCount")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("StartingDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApartmentId");
+
+                    b.ToTable("UserReservationData");
+                });
+
             modelBuilder.Entity("BookingInRio.Models.AmenitiesToDetailedApartments", b =>
                 {
                     b.HasOne("BookingInRio.Models.Amenity", "Amenity")
@@ -482,6 +512,17 @@ namespace BookingInRio.Migrations
                         .IsRequired();
 
                     b.Navigation("AboutApartment");
+                });
+
+            modelBuilder.Entity("BookingInRio.Models.UserReservationData", b =>
+                {
+                    b.HasOne("BookingInRio.Models.AboutApartment", "Apartment")
+                        .WithMany()
+                        .HasForeignKey("ApartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Apartment");
                 });
 
             modelBuilder.Entity("BookingInRio.Models.AboutApartment", b =>
