@@ -1,8 +1,13 @@
 ﻿using BookingInRio.Data;
 using BookingInRio.Models;
 using BookingInRio.Services;
+using BookingInRio.ViewModels;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using System.Runtime.ExceptionServices;
+using System.Text.Json.Serialization;
 
 namespace BookingInRio.Controllers
 {
@@ -16,6 +21,7 @@ namespace BookingInRio.Controllers
         public IActionResult Index()
         {
             /*List<AboutApartment> Apartments = _db.AboutApartments.ToList();*/
+            ViewBag.Message = TempData["Message"] as string;
             List<AboutApartment> Apartments = _db.AboutApartments
                 .Include(apart => apart.DetailedInformationApartment)
                 .ThenInclude(d=>d.AmenitiesToDetailedApartments)
@@ -61,24 +67,67 @@ namespace BookingInRio.Controllers
         }
 
         [HttpPost]
-        public IActionResult CheckOut(UserReservationData data)
+        public IActionResult CheckOut(FirtCheckoutInformations data)
         {
+            if (data == null || data.ApartmentId == 0) return NotFound();
             if (ModelState.IsValid) {
-
-                UserReservationData newData = new UserReservationData
-                {
-                    StartingDate = data.StartingDate,
-                    EndingTime = data.EndingTime,
-                    PersonCount = data.PersonCount,
-                    BedCount = data.BedCount,
-                    ApartmentId = data.ApartmentId  
-                };
-                _db.UserReservationData.Add(newData);
-                _db.SaveChanges();
-                return View("Apartment");
+                TempData["OrderDetails"] = JsonConvert.SerializeObject(data);
+                return RedirectToAction("ConfirmOrder", new { id = data.ApartmentId });
             }
-            return View("CheckOut");
+            else return RedirectToAction("Apartment",new {id = data.ApartmentId});
         }
-
-    }
+        public IActionResult ConfirmOrder(int? id)
+        {
+            if(id == null) return NotFound();
+            AboutApartment? apart = _db.AboutApartments.Find(id);
+            if(apart  == null) return NotFound();
+            return View("CheckOut",apart);
+        }
+        [HttpPost]
+        public IActionResult PlaceOrder(PlaceOrderDataVIewModel data)
+        {
+            if (ModelState.IsValid)
+            {
+                if (TempData["OrderDetails"] is string jsonData)
+                {
+                    FirtCheckoutInformations? resData = JsonConvert.DeserializeObject<FirtCheckoutInformations>(jsonData);
+                    if(resData != null) { 
+                        UserReservationData orderData = new UserReservationData
+                        {
+                            StartingDate = resData.StartingDate,
+                            EndingTime = resData.EndingTime,
+                            PersonCount = resData.PersonCount,
+                            BedCount = resData.BedCount,
+                            FirstName = data.FirstName,
+                            LastName = data.LastName,
+                            Email = data.email,
+                            PhoneNumber = data.phone,
+                            Country = data.country,
+                            SpecialRequest = data.Request,
+                            ApartmentId = resData.ApartmentId,
+                        };
+                        DatesApartmentReserved reservedDate = new DatesApartmentReserved
+                        {
+                            StartTime = resData.StartingDate,
+                            EndTime = resData.EndingTime,
+                            ApartId = resData.ApartmentId
+                        };
+                        _db.UserReservationData.Add(orderData);
+                        _db.DatesApartmentsReserved.Add(reservedDate);
+                        _db.SaveChanges();
+                        TempData["Message"] = "Order placed";
+                        return RedirectToAction("Index");
+                    }
+                    return Json(new { success = false, message = "Something went wrong!" });
+                }
+                else
+                {
+                    return Json(new { success = false, message = "Something went wrong!" });
+                }
+            }
+            else {
+                return Json(new { success = false, message = "Please fill all necessary boxes!"}); 
+            }
+        }
+    } 
 }

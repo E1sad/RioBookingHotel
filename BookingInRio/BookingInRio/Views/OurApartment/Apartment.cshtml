@@ -86,8 +86,9 @@
                                     <p>$@Model.PriceOfRoom</p>
                                     <span>Per Night</span>
                                     <form action="/OurApartment/CheckOut" method="post">
-                                        <input type="date" name="StartingTime"> 
-                                        <input type="date" name="Ending Time">
+                                        <input type="hidden" name="ApartmentId" value="@Model.Id">
+                                        <input type="date" name="StartingDate">
+                                        <input type="date" name="EndingTime">
                                         <input type="number" name="PersonCount" placeholder="Person Count">
                                         <input type="number" name="BedCount" placeholder="Bed Count">
                                         <button type="submit">Book Now</button>

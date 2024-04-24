@@ -20,6 +20,24 @@ namespace BookingInRio.Models
         [Required, Range(1, 10)]
         public int BedCount { get; set; }
 
+        [Required]
+        public string FirstName { get; set; }
+
+        [Required]
+        public string LastName { get; set; }
+
+        [Required]
+        public string Email { get; set; }
+
+        [Required]
+        public string PhoneNumber { get; set; }
+
+        [Required]
+        public string Country { get; set; }
+
+        [Required(AllowEmptyStrings = true)]
+        public string? SpecialRequest { get; set; }
+
         [Required, ForeignKey("Apartment")]
         public int ApartmentId { get; set; }
 

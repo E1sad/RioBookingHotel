@@ -1,4 +1,5 @@
-﻿<body style="background-image: url(/assets/media/bg-apartment.png);">
+﻿@model AboutApartment
+<body style="background-image: url(/assets/media/bg-apartment.png);">
     <main>
         <section id="order">
             <div class="container">
@@ -10,36 +11,36 @@
                                     <div class="title">
                                         <h2>Guest Details</h2>
                                     </div>
-                                    <form action="#">
+                                    <form action="/OurApartment/PlaceOrder" method="post">
                                         <div class="row">
                                             <div class="col-6 mb-3">
                                                 <label class="form-label">First Name</label>
-                                                <input class="form-control">
+                                                <input class="form-control" name="FirstName">
                                             </div>
                                             <div class="col-6 mb-3">
                                                 <label class="form-label">Last Name</label>
-                                                <input class="form-control">
+                                                <input class="form-control" name="LastName">
                                             </div>
                                             <div class="col-6 mb-3">
                                                 <label class="form-label">Email Address</label>
-                                                <input class="form-control">
+                                                <input class="form-control" name="email">
                                             </div>
                                             <div class="col-6 mb-3">
                                                 <label class="form-label">Phone Number</label>
-                                                <input class="form-control">
+                                                <input class="form-control" name="phone">
                                             </div>
                                             <div class="col-6 mb-3">
                                                 <label class="form-label" style="display: block;">Country</label>
-                                                <select class="form-control">
-                                                    <option disabled>Select Country</option>
-                                                    <option>Azerbaijan</option>
-                                                    <option>Turkey</option>
-                                                    <option>England</option>
+                                                <select class="form-control" name="country">
+                                                    <option disabled selected>Select Country</option>
+                                                    <option value="Azerbaijan">Azerbaijan</option>
+                                                    <option value="Turkey">Turkey</option>
+                                                    <option value="England">England</option>
                                                 </select>
                                             </div>
                                             <div class="col-6 mb-3">
                                                 <label class="form-label" style="display: block;">Special Requests</label>
-                                                <textarea class="form-control" rows="3"></textarea>
+                                                <textarea class="form-control" rows="3" name="Request"></textarea>
                                             </div>
                                             <div class="col-12 mb-3">
                                                 <button type="submit">Continue to Check out</button>
@@ -54,7 +55,7 @@
                                         Order Summary
                                     </h2>
                                     <div class="main-image">
-                                        <img src="assets/media/example.jpg" alt="">
+                                        <img src="@Model.ApartmentThumbnailImagePath" alt="">
                                     </div>
                                     <div class="container">
                                         <div class="row">
@@ -62,23 +63,23 @@
                                                 <p>Room Type</p>
                                             </div>
                                             <div class="col-6">
-                                                <span>Junior Suite</span>
+                                                <span>@Model.Name</span>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">
-                                                <p>Room Type</p>
+                                                <p>Bed Count</p>
                                             </div>
                                             <div class="col-6">
-                                                <span>Junior Suite</span>
+                                                <span>@Model.BedCounts</span>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">
-                                                <p>Room Type</p>
+                                                <p>Person Count</p>
                                             </div>
                                             <div class="col-6">
-                                                <span>Junior Suite</span>
+                                                <span>@Model.PersonLimitSize</span>
                                             </div>
                                         </div>
                                     </div>
@@ -90,17 +91,7 @@
                                                 </p>
                                             </div>
                                             <div class="col-6" style="text-align: right;">
-                                                <span>100$</span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p>
-                                                    SubTotal
-                                                </p>
-                                            </div>
-                                            <div class="col-6" style="text-align: right;">
-                                                <span>100$</span>
+                                                <span>@Model.PriceOfRoom$</span>
                                             </div>
                                         </div>
                                     </div>
@@ -112,7 +103,7 @@
                                                 </span>
                                             </div>
                                             <div class="col-6" style="text-align: right;">
-                                                <span>121$</span>
+                                                <span>@Model.PriceOfRoom$</span>
                                             </div>
                                         </div>
                                     </div>
