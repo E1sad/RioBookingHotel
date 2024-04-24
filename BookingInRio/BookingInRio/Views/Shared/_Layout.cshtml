@@ -153,6 +153,16 @@
         });
     </script>
 
+    <script>
+        $(document).ready(function () {
+            var message = '@Html.Raw(ViewBag.Message)';
+            if (message) {
+                alert(message);
+            }
+        });
+
+    </script>
+
 
 </body>
 </html>

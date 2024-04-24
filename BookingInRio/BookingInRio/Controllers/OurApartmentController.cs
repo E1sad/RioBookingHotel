@@ -86,6 +86,7 @@ namespace BookingInRio.Controllers
         [HttpPost]
         public IActionResult PlaceOrder(PlaceOrderDataVIewModel data)
         {
+            ViewBag.Message = TempData["Message"] as string;
             if (ModelState.IsValid)
             {
                 if (TempData["OrderDetails"] is string jsonData)
@@ -126,7 +127,13 @@ namespace BookingInRio.Controllers
                 }
             }
             else {
-                return Json(new { success = false, message = "Please fill all necessary boxes!"}); 
+                FirtCheckoutInformations? resData = JsonConvert.DeserializeObject<FirtCheckoutInformations>((string)TempData["OrderDetails"]);
+                if (resData != null)
+                {
+                    TempData["Message"] = "Please fill all necessary boxes!";
+                    return RedirectToAction("ConfirmOrder", new { id = resData.ApartmentId }); 
+                }
+                return Json(new { success = false, message = "Something went wrong!"}); 
             }
         }
     } 
